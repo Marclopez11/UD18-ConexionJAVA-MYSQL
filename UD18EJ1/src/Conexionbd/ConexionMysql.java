@@ -11,7 +11,7 @@ public class ConexionMysql {
 	public Connection conexion() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://192.168.1.172:3306?useTimezone=true&serverTimezone=UTC","remote","Reus_2022");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://192.168.1.29:3306?useTimezone=true&serverTimezone=UTC","remote","Reus_2022");
 			System.out.println("Server Connected");
 			return conexion;
 		} catch (SQLException | ClassNotFoundException ex) {
